@@ -1,16 +1,10 @@
-"# PMML-Project" 
-Dataset: 
--Cats_vs_Dogs: 12000 samples per class
--Cifar-100: 500 Samples per class
--tiny imagenet?
-Adverserial Attack Method: 
--FGSM: faster  
--PDG: more precise
-Foolbox:
-                           
+# Animal Image Classifier with Adversarial Attacks
 
-Model: 
--DenseNet
--ResNet
--VGG16
--eigenes model
+This project uses a ResNet-18 model to classify images from the "Animals-10" dataset and evaluates the performance under adversarial attacks. The code also includes data transformations, visualization of images, and the training loop with integration to Weights & Biases (W&B) for tracking metrics.
+
+## Installation
+
+To get started, install the necessary dependencies:
+
+```bash
+pip install datasets torch torchvision matplotlib tqdm scikit-learn wandb torchattacks
